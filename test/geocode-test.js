@@ -13,7 +13,7 @@ vows.describe('Geocode').addBatch({
     },
     'It should return the correct latitude and longitude': function (err, data) {
       assert.equal(err, null);
-      assert.equal(data.candidates.length, 10);
+      assert.isTrue(data.candidates.length > 1);
       assert.equal(data.candidates[0].location.x.toPrecision(5), (-122.67633658436517).toPrecision(5));
       assert.equal(data.candidates[0].location.y.toPrecision(5), (45.5167324388521).toPrecision(5));
     }
@@ -26,7 +26,7 @@ vows.describe('Geocode').addBatch({
     },
     'It should return the correct latitude and longitude': function (err, data) {
       assert.equal(err, null);
-      assert.equal(data.candidates.length, 10);
+      assert.isTrue(data.candidates.length > 1);
       assert.equal(data.candidates[0].location.x.toPrecision(5), (-122.67633658436517).toPrecision(5));
       assert.equal(data.candidates[0].location.y.toPrecision(5), (45.5167324388521).toPrecision(5));
     }

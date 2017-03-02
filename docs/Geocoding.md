@@ -30,7 +30,7 @@ By default, geocoding makes simple single input field requests to the [World Geo
 
 ## Passing additional parameters
 
-Any parameter supported by the [`findAddressCandidates'](https://developers.arcgis.com/rest/geocode/api-reference/geocoding-find-address-candidates.htm) operation of the World Geocoding Service can be passed through.
+Any parameter supported by the [`findAddressCandidates`](https://developers.arcgis.com/rest/geocode/api-reference/geocoding-find-address-candidates.htm) operation of the World Geocoding Service can be passed through.
 
 ```javascript
     client.geocode({
